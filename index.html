@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
-    !-- tailwind and daisy ui cdn -->
+    <!-- tailwind and daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google fonts Manrope -->
+    <!-- Google fonts Lato -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/6fe508e4e8.js" crossorigin="anonymous"></script>
     <!-- tailwind custom -->
@@ -20,8 +20,8 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                'gradient-start': '#FF8938 ',
-                'gradient-end': '#F00',
+                'color-primary': '#F85559;',
+                
               }
             }
           }
@@ -29,12 +29,60 @@
       </script>
     <!-- custom style -->
     <style>
-        .font-manrope{
-            font-family: 'Manrope', sans-serif;
+        .font-lato{
+            font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
-<body>
-    
+<body class="font-lato">
+    <header class="container mx-auto">
+        <!---------------------------------------->
+        <!-- navbar start-->
+        <nav>
+            <div class="navbar bg-transparent md:bg-color-primary flex justify-between rounded-full mt-8">
+                <div class="hidden md:block">
+                    <ul tabindex="0" class="text-white menu menu-sm dropdown-content flex flex-row p-0">
+                        <li><a class="py-1">Home</a></li>
+                        <li><a class="py-1">About Us</a></li>
+                        <li><a class="py-1">Shop</a></li>
+                        <li><a class="py-1">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="text-start md:text-end lg:text-center">
+                  <img class="" src="images\logo.png" alt="" >
+                  <a class="text-start md:text-end lg:text-center btn btn-ghost normal-case text-4xl text-black md:text-white font-bold">Fruit Burst</a>
+                </div>
+                
+                <div class="form-control relative items-center hidden lg:block pr-3">
+                    <input type="text" placeholder="Search here" class="input input-bordered rounded-full" />
+                    <div class="absolute top-3 right-5 ">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+               
+                <div class="dropdown md:hidden relative ">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </label>
+                    <div class="absolute -start-10">
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-30">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                          </ul>
+                    </div>
+                  </div>
+              </div>
+        </nav>
+        <!-- navbar end-->
+        <!---------------------------------------->
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
+
+
+
+
